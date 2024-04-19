@@ -34,6 +34,6 @@ services:
       # ME_CONFIG_MONGODB_ADMINUSERNAME: Admin
       # ME_CONFIG_MONGODB_ADMINPASSWORD: Admin123
       ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
-      ME_CONFIG_BASICAUTH: false
+      # ME_CONFIG_BASICAUTH: false
 volumes:
   mongo-db:
