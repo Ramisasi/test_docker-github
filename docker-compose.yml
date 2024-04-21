@@ -35,13 +35,13 @@ services:
       # ME_CONFIG_MONGODB_ADMINPASSWORD: Admin123
       ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
       # ME_CONFIG_BASICAUTH: false
-  # nginx:
-  #  image: nginx:stable-alpine
-  #  ports:
-  #   - "80:80"
-  #  volumes:
-  #   - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-  #  depends_on:
-  #   - test-docker
+  nginx:
+   image: nginx:stable-alpine
+   ports:
+    - "80:80"
+   volumes:
+    - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+   depends_on:
+    - test-docker
 volumes:
   mongo-db:
